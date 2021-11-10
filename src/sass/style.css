@@ -1,0 +1,70 @@
+body{
+    background-image: url('../images/backgrounds/body-bg.jpg');
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+}
+
+.cover{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+
+    background-image: url('../images/backgrounds/table-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card{
+    border: 4px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 8px black;
+
+    width: 190px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+    transform: translateX(-48%);
+}
+
+li+li{
+    margin-left: 45px;
+}
+
+.deck{
+    position: absolute;
+    width: 290px;
+    height: 400px;
+    right: 7%;
+    top: 27%;
+}
+
+.skin_list{
+    top: 5%;
+}
+
+.btns{
+    position: absolute;
+    z-index: 999;
+    top: 46%;
+    
+}
+
+button{
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: chocolate;
+}
