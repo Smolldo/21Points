@@ -3,9 +3,7 @@ body{
     background-size: cover;
 }
 
-.container{
-    position: relative;
-}
+
 
 .cover{
     position: absolute;
@@ -31,40 +29,5 @@ body{
 
 ul{
     display: flex;
-    list-style: none;
-
-    position: absolute;
-    bottom: 5%;
-    left: 48%;
-    transform: translateX(-48%);
-}
-
-li+li{
-    margin-left: 45px;
-}
-
-.deck{
-    position: absolute;
-    width: 290px;
-    height: 400px;
-    right: 7%;
-    top: 27%;
-}
-
-.skin_list{
-    top: 5%;
-}
-
-.btns{
-    position: absolute;
-    z-index: 999;
-    top: 46%;
-    
-}
-
-button{
-    padding: 5px 10px;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: chocolate;
+    flex-wrap: wrap;
 }

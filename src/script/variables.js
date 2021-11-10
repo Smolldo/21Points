@@ -1,0 +1,15 @@
+export const refs = {
+    backdrop: document.querySelector('.backdrop'),
+    nameInp: document.querySelector('.hero_name_inp'),
+    playBtn: document.querySelector('.start_btn'),
+    gameField: document.querySelector('.game_field'),
+    compPoint: document.querySelector('.compPoint'),
+    playPoint: document.querySelector('.playPoint'),
+    pickBtn: document.querySelector('.card-btn[data-action="pick"]'),
+    stopBtn: document.querySelector('.card-btn[data-action="stop"]'),
+    enemyCards: document.querySelector('.enemy_card_list'),
+    playerCards: document.querySelector('.player_card_list'),
+    playerNickName: document.querySelector('.player_nickName'),
+    ruleBtn: document.querySelector('.rule_btn'),
+    ruleList: document.querySelector('.rules_list'),
+}

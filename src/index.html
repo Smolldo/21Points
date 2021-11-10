@@ -4,87 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/main.scss">
     <title>Ochk0</title>
 </head>
 <body>
-   
-        <div class="cover">
-            <ul class="skin_list">
-                <li><img class="card skin" src="./images/skin.jpg" alt=""></li>
-                <li><img class="card skin" src="./images/skin.jpg" alt=""></li>
-                <li><img class="card skin" src="./images/skin.jpg" alt=""></li>
+   <div class="backdrop ">
+       <div class="start_window">
+          <!-- <ul class="start_button_list">
+               <li class="start_button_item">-->
+                   <h2 class="start_title">Greetings!</h2>
+                   <input type="text" class="hero_name_inp" maxlength="12">
+                   <button class="start_btn">Play</button>
+              <!--   </li>
+              <li class="start_button_item">
+                   <button class="start_btn">Not Play</button>
+                </li>-->
+           <!--</ul>-->
+       </div>
+   </div>
+     
+    <div class="container">
+        <div class="game_field is-none">
+            <h1 class="main_title">21 Points</h1>
+            <h1 class="side_title">Enjoy</h1>
+            <div class="table">
+                 <ul class="point_list">
+                    <li class="point_item">
+                        <span class="point_span compPoint">4</span>
+                    </li>
+                    <li class="point_item">
+                        <span class="point_span playPoint">12</span>
+                    </li>
+                 </ul>
+                <!--Cards and buttons-->
+                <div class="card_cover">
+                      <ul class="enemy_card_list card_list">
+                        <li class="enemy_card_item card_item"><img src="./images/skin.jpg" alt="" class="card"></li>
+                        <li class="enemy_card_item card_item" ><img src="./images/skin.jpg" alt=""class="card"></li>
+                        <li class="enemy_card_item card_item"><img src="./images/skin.jpg" alt="" class="card"></li>
+                      </ul>
+                     <ul class="card_btn_list">
+                   <li class="card_btn_item">
+                       <button class="card_btn" data-action="pick">Pick</button>
+                    </li>
+                   <li class="card_btn_item">
+                       <button class="card_btn" data-action="stop">Stop</button>
+                    </li>
+                     </ul> 
+                     <ul class="player_card_list card_list">
+                        <li class="player_card_item card_item"><img src="./images/clubs/ace-of-clubs.jpg" alt="" class="card"></li>
+                        <li class="player_card_item card_item"><img src="./images/diamonds/ace-of-diamonds.jpg" alt="" class="card"></li>
+                        <li class="player_card_item card_item"><img src="./images/spades/ace-of-spades.jpg" alt="" class="card"></li>
+                     </ul>
+                </div>
+                <span class="player_nickName">@Name@</span>
+                <div class="deck_cover">
+                    <img src="./images/deck.png" class="deck" alt="">
+                 </div>
+
+            </div>
+            <ul class="rules_list is-none">
+                <li class="rules_item">1. Standart Rules</li>
+                <li class="rules_item">2. You pick up cards</li>
+                <li class="rules_item">3. Until 3 pts.</li>
+                <li class="rules_item">4. Winner is who take</li>
+                <li class="rules_item">5. Nerarly to 21 points</li>
+                <li class="rules_item">6. Good luck, Chubrik</li>
             </ul>
-            <ul class="btns">
-                <li><button>Pick</button></li>
-                <li><button>Stop</button></li>
-            </ul>
-            <ul>
-                <li><img class="card" src="./images/spades/ace-of-spades.jpg" alt=""></li>
-                <li><img class="card" src="./images/hearts/ace-of-hearts.jpg" alt=""></li>
-                <li><img class="card" src="./images/clubs/ace-of-clubs.jpg" alt=""></li>
-            </ul>
-            <img class="deck" src="./images/deck.png" alt="">
+        <button class="rule_btn">Rules</button>
         </div>
-        
-    <ul>
-        <!--
-            <li><img class = "card" src="./images/spades/2-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/3-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/4-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/5-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/6-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/7-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/8-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/9-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/10-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/jack-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/queen-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/king-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/spades/ace-of-spades.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/2-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/3-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/4-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/5-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/6-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/7-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/8-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/9-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/10-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/jack-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/queen-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/king-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/hearts/ace-of-hearts.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/2-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/3-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/4-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/5-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/6-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/7-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/8-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/9-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/10-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/jack-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/queen-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/king-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/diamonds/ace-of-diamonds.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/2-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/3-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/4-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/5-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/6-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/7-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/8-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/9-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/10-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/jack-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/queen-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/king-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/clubs/ace-of-clubs.jpg" alt=""></li>
-        <li><img class = "card" src="./images/skin.jpg" alt=""></li>
-        <li><img src="./images/deck.png" alt=""></li>
-        -->
-    </ul>
+    </div>
+
+   <!-- <audio class="casino" src="./audio/казино.mp3"></audio>-->
+
     <script src="./script/index.js"></script>
 </body>
 </html>
