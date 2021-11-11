@@ -1,5 +1,9 @@
+import { markup } from "./game";
 import { refs } from "./variables";
+import { GetRandImage } from "./game";
 const a = document.querySelector('.casino');
+
+
 const PLAY = () =>{
     if(refs.nameInp.value !== '' ){
         refs.playerNickName.textContent = refs.nameInp.value;
@@ -7,6 +11,16 @@ const PLAY = () =>{
         refs.gameField.classList.toggle('is-none');
         //a.play();
       //  a.volume = 0.4;
+     
+       //Show cards
+       setTimeout(() => {
+        EnemyCards();
+        
+      },400)
+
+     
+     
+
     }
     else{
         refs.nameInp.placeholder = "Enter Name!";
@@ -20,6 +34,14 @@ const PLAYBTN = (e) =>{
     else{
         PLAY();
     }
+}
+
+const EnemyCards = () =>{
+  refs.enemyItem.forEach(item => {
+      markup.forEach(el =>{
+        item.innerHTML = markup[GetRandImage(markup)]
+      })
+  });
 }
 
 
