@@ -151,7 +151,7 @@ const Switcher = (x) =>{
 //REtry
 const RETRY = () =>{
    
-    refs.finalBack.classList.toggle('is-none');
+    window.location.reload();
 }
 //Exit
 const EXIT = () =>{
