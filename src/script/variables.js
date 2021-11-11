@@ -14,4 +14,8 @@ export const refs = {
     playerNickName: document.querySelector('.player_nickName'),
     ruleBtn: document.querySelector('.rule_btn'),
     ruleList: document.querySelector('.rules_list'),
+    finalBack: document.querySelector('.final_back'),
+    finalTitle: document.querySelector('.final_title'),
+    retryBtn: document.querySelector('.retry_btn'),
+    exitBtn: document.querySelector('.exit_btn'),
 }

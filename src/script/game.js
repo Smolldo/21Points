@@ -2,9 +2,16 @@ import list from '../template/list.hbs';
 import card from '../template/cards.json';
 import { refs } from './variables';
 import playList from '../template/player-card.hbs';
+import { PLAY } from './start';
 
 export const markup = card.map((e) => list(e));
 const markupPlayer = card.map((el) => playList(el));
+
+const text = [
+    "UwU You WIN!",
+    "Shame On You!",
+    "We are equal!",
+]
 
 //card picker function
 const Pick = () => {
@@ -13,7 +20,9 @@ const Pick = () => {
     c.classList.add("player_card_item");
     c.innerHTML = `${markupPlayer[GetRandImage(markupPlayer)]}`;
     if(refs.playerCards.childElementCount !== 3){
-        refs.playerCards.appendChild(c)
+        setTimeout(() =>{
+            refs.playerCards.appendChild(c)
+        },400)
     }
     else{
         refs.pickBtn.setAttribute("disable", "true")
@@ -26,14 +35,73 @@ const STOP = () => {
     let comPoi = document.querySelectorAll('.comp_card');
     let plaPoi = document.querySelectorAll('.player_card');
 
+    let player = Switcher(plaPoi);
+    let computer = Switcher(comPoi);
 
-    refs.playPoint.textContent = Switcher(plaPoi);
-    refs.compPoint.textContent = Switcher(comPoi);
+   setTimeout(() =>{
+        //total points on screen
+    refs.playPoint.textContent = player;
+    refs.compPoint.textContent = computer;
 
-    if(Switcher(plaPoi) > Switcher(comPoi)){
-        alert("+")
+  //card seeing or not
+    refs.enemyItem.forEach(cl => {
+        cl.classList.remove('hidden');
+    })
+    comPoi.forEach(cl => {
+        cl.classList.remove('is-none');
+    })
+   },400)
+
+
+    //Result conditions
+    if(player > computer && player <= 21){
+        refs.finalTitle.textContent = text[0];
+        FinalWindow();
+    }
+    else if(player > computer && player > 21){
+        refs.finalTitle.textContent = text[1];
+        FinalWindow();
+    }
+    else if(player > 21 && computer > 21){
+        refs.finalTitle.textContent = text[1];
+        FinalWindow();
+    }
+    else if(player > 21 && computer <= 21){
+        refs.finalTitle.textContent = text[1];
+        FinalWindow();
+    }
+    else if(player > computer && player <=21 && computer < 21){
+       refs.finalTitle.textContent = text[0];
+        FinalWindow();
+    }
+    else if(player < computer && player <=21 && computer < 21){
+        refs.finalTitle.textContent = text[1];
+        FinalWindow();
+    }
+    else if(player == computer){
+        refs.finalTitle.textContent = text[2];
+        FinalWindow();
+    }
+    else if(player < computer && player < 21 && computer > 21){
+       refs.finalTitle.textContent = text[0];
+        FinalWindow();
+    }
+    else if(player == 21){
+       refs.finalTitle.textContent = text[0];
+        FinalWindow();
+    }
+    else if(computer == 21){
+        refs.finalTitle.textContent = text[1];
+        FinalWindow();
     }
     
+}
+
+const FinalWindow = () =>{
+    setTimeout(() =>{
+        refs.finalBack.classList.toggle('is-none');
+    },2100)
+
 }
 
 const Switcher = (x) =>{
@@ -79,9 +147,36 @@ const Switcher = (x) =>{
     return res;
 }
 
+//result screen functions
+//REtry
+const RETRY = () =>{
+   
+    refs.finalBack.classList.toggle('is-none');
+}
+//Exit
+const EXIT = () =>{
+    window.location.href = 'https://www.youtube.com/watch?v=2kCklVUxOsM';
+}
+
+//Exit on button
+const KeyLeft = (e) =>{
+    if(e.key !== "Escape"){
+        return;
+    }
+    else{
+        EXIT();
+    }
+}
+
+//random picture
 export const GetRandImage = (x) =>{
  return Math.floor(x.length * Math.random());
 } 
 
+
+//Listeners
 refs.pickBtn.addEventListener('click', Pick);
-refs.stopBtn.addEventListener('click', STOP)
+refs.stopBtn.addEventListener('click', STOP);
+refs.retryBtn.addEventListener('click', RETRY);
+refs.exitBtn.addEventListener('click', EXIT);
+window.addEventListener('keyup', KeyLeft);

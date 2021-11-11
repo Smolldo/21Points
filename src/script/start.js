@@ -4,7 +4,7 @@ import { GetRandImage } from "./game";
 const a = document.querySelector('.casino');
 
 
-const PLAY = () =>{
+export const PLAY = () =>{
     if(refs.nameInp.value !== '' ){
         refs.playerNickName.textContent = refs.nameInp.value;
         refs.backdrop.classList.toggle('is-none');
@@ -16,10 +16,7 @@ const PLAY = () =>{
        setTimeout(() => {
         EnemyCards();
         
-      },400)
-
-     
-     
+      },800)
 
     }
     else{
