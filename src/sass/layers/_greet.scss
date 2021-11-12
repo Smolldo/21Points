@@ -28,12 +28,12 @@ box-shadow: 3px 3px 6px var(--box-shadow);
     width: 90%;
     height: auto;
 }
-@media screen and (min-width:480px) {
+@media screen and (min-width:768px) {
     padding: 40px;
     width: 450px;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1200px) {
     width: 540px;
 }
 }
@@ -141,12 +141,12 @@ box-shadow: 3px 3px 6px var(--box-shadow);
         width: 90%;
         height: auto;
     }
-    @media screen and (min-width:480px) {
+    @media screen and (min-width:768px) {
         padding: 40px;
         width: 450px;
     }
     
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1200px) {
         width: 540px;
     }
 }
