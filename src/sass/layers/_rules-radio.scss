@@ -5,7 +5,6 @@
     z-index: 999;
     position: fixed;
     right: 15px;
-    bottom: 70px;
 
     border-radius: 14px;
     border-bottom-right-radius:0 ;
@@ -14,16 +13,32 @@
     
     background-color: rgb(255, 230, 0);
     font-family:'Ceviche One' ;
-    font-size: 36px;
+    
     text-shadow: 2px 3px 3px rgb(75, 75, 75);
-    padding: 20px;
+    
+
+    @media screen and (min-width:320px) {
+        bottom: 30px;
+        font-size: 16px;
+        padding: 3px;
+    }
+    @media screen and (min-width:768px) {
+        bottom: 50px;
+        font-size: 26px;
+        padding: 7px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        bottom: 70px;
+        font-size: 36px;
+        padding: 20px;
+    }
 }
 
 .rule_btn{
     z-index: 999;
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+   
     padding-left: 16px;
     padding-right: 16px;
     align-self: center;
@@ -32,7 +47,7 @@
     border-color: transparent;
     border-radius: 16px;
     background-color: rgb(224, 146, 0);
-    font-size: 32px;
+    
     transition: all .25s linear;
 
     &:hover, &:focus{
@@ -40,6 +55,23 @@
         color: rgb(255, 0, 0);
         background-color: rgb(255, 166, 0);
         box-shadow: 2px 3px 4px black;
+    }
+
+    @media screen and (min-width:320px) {
+        right: 5px;
+    bottom: 5px;
+    font-size: 14px;
+    }
+    @media screen and (min-width:768px) {
+        right: 10px;
+    bottom: 10px;
+    font-size: 24px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        right: 15px;
+    bottom: 15px;
+    font-size: 32px;
     }
 }
 
@@ -65,13 +97,30 @@
         background-color: rgb(255, 166, 0);
         box-shadow: 2px 3px 4px black;
     }
+
+    @media screen and (min-width:320px) {
+        right: 100px;
+    bottom: 5px;
+    font-size: 14px;
+    }
+    @media screen and (min-width:768px) {
+        right: 150px;
+    bottom: 10px;
+    font-size: 24px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        right: 175px;
+    bottom: 15px;
+    font-size: 32px;
+    }
 }
 
 .card_value_list{
     z-index: 999;
     position: fixed;
     right: 15px;
-    bottom: 70px;
+   
 
     border-radius: 14px;
     border-bottom-right-radius:0 ;
@@ -80,7 +129,24 @@
     
     background-color: rgb(255, 230, 0);
     font-family:'Ceviche One' ;
-    font-size: 36px;
+  
     text-shadow: 2px 3px 3px rgb(75, 75, 75);
-    padding: 20px;
+ 
+
+    @media screen and (min-width:320px) {
+        bottom: 30px;
+        font-size: 16px;
+        padding: 3px;
+    }
+    @media screen and (min-width:768px) {
+        bottom: 50px;
+        font-size: 26px;
+        padding: 7px;
+    }
+    
+    @media screen and (min-width:1200px) {
+        bottom: 70px;
+        font-size: 36px;
+        padding: 20px;
+    }
 }

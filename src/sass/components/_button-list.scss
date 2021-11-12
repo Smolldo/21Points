@@ -2,8 +2,18 @@
 
 .card_btn_list{
     display: flex;
-    margin: 30px auto;
     justify-content: center;
+    @media screen and (min-width:320px) {
+        margin: 5px auto;
+    }
+    @media screen and (min-width:768px) {
+        margin: 15px auto;
+    }
+    
+    @media screen and (min-width:1200px) {
+        margin: 30px auto;
+   
+    }
 }
 
 .card_btn_item +.card_btn_item{
@@ -85,9 +95,7 @@
 .give_card_btn{
     position: absolute;
     
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -50%);
+
 
     padding-left: 16px;
     padding-right: 16px;
@@ -105,6 +113,21 @@
         color: rgb(255, 0, 0);
         background-color: rgb(255, 166, 0);
         box-shadow: 2px 3px 4px black;
+    }
+
+    @media screen and (min-width:320px) {
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    @media screen and (min-width:768px) {
+        top: 50%;
+    left: 47%;
+    transform: translate(-50%, -47%);
+    }
+    
+    @media screen and (min-width:1200px) {
+       
     }
 }
 
