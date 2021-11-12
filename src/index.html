@@ -39,11 +39,12 @@
                 <!--Cards and buttons-->
                 <div class="card_cover">
                       <ul class="enemy_card_list card_list">
-                        <li class="enemy_card_item card_item hidden"></li>
-                        <li class="enemy_card_item card_item hidden"></li>
-                        <li class="enemy_card_item card_item hidden"></li>
+                        <li class="enemy_card_item card_item "></li>
+                        <li class="enemy_card_item card_item "></li>
+                        <li class="enemy_card_item card_item "></li>
                       </ul>
-                     <ul class="card_btn_list">
+                      <button class="give_card_btn">START</button>
+                     <ul class="card_btn_list is-none">
                    <li class="card_btn_item">
                        <button class="card_btn pick">Pick</button>
                     </li>
@@ -72,6 +73,19 @@
                 <li class="rules_item">6. Good luck, Chubrik</li>
             </ul>
         <button class="rule_btn">Rules</button>
+            <ul class="card_value_list is-none">
+                <li class="card_value_item">"2" & "Jack" = 2 points</li>
+                <li class="card_value_item">"3" & "Quin" = 3 points</li>
+                <li class="card_value_item">"4" & "King" = 4 points</li>
+                <li class="card_value_item">"5" & = 5 points</li>
+                <li class="card_value_item">"6" & = 6 points</li>
+                <li class="card_value_item">"7" & = 7 points</li>
+                <li class="card_value_item">"8" & = 8 points</li>
+                <li class="card_value_item">"9" & = 9 points</li>
+                <li class="card_value_item">"10" & = 10 points</li>
+                <li class="card_value_item">"Ace" & = 11 points</li>
+            </ul>
+        <button class="point_btn">Points</button>
         </div>
     </div>
     
@@ -84,12 +98,20 @@
                     <button class="retry_btn">Retry</button>
                 </li>
                 <li class="final_buttons_item">
+                    <button class="main_menu_btn">Main Menu</button>
+                </li>
+                <li class="final_buttons_item">
                     <button class="exit_btn">Exit</button>
                 </li>
             </ul>
         </div>
     </div>
-   <!-- <audio class="casino" src="./audio/казино.mp3"></audio>-->
+    <audio class="casino" src="./audio/казино.mp3"></audio>
+    <audio src="./audio/click.mp3" class="klik"></audio>
+    <audio src="./audio/pickacard.mp3" class="pik"></audio>
+    <audio src="./audio/uwu.mp3" class="uwu"></audio>
+    <audio src="./audio/su.mp3" class="su"></audio>
+
 
     <script src="./script/index.js"></script>
 </body>

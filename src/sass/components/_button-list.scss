@@ -31,6 +31,9 @@
 }
 
 .retry_btn{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 16px;
     padding-right: 16px;
     align-self: center;
@@ -75,3 +78,57 @@
     }
 }
 
+
+
+//Razdat' karty
+
+.give_card_btn{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-family:'Ceviche One';
+    border-color: transparent;
+    border-radius: 16px;
+    background-color: rgb(224, 146, 0);
+    font-size: 32px;
+    transition: all .25s linear;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+        background-color: rgb(255, 166, 0);
+        box-shadow: 2px 3px 4px black;
+    }
+}
+
+.main_menu_btn{
+    margin-top: 30px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-self: center;
+    font-weight: 600;
+    font-family:'Ceviche One';
+    border-color: transparent;
+    border-radius: 16px;
+    background-color: rgb(224, 146, 0);
+    font-size: 32px;
+    transition: all .25s linear;
+
+    &:hover, &:focus{
+        cursor: pointer;
+        color: rgb(255, 0, 0);
+        background-color: rgb(255, 166, 0);
+        box-shadow: 2px 3px 4px black;
+    }
+}

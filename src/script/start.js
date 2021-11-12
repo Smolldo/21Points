@@ -11,13 +11,6 @@ export const PLAY = () =>{
         refs.gameField.classList.toggle('is-none');
         //a.play();
       //  a.volume = 0.4;
-     
-       //Show cards
-       setTimeout(() => {
-        EnemyCards();
-        
-      },800)
-
     }
     else{
         refs.nameInp.placeholder = "Enter Name!";
@@ -31,14 +24,6 @@ const PLAYBTN = (e) =>{
     else{
         PLAY();
     }
-}
-
-const EnemyCards = () =>{
-  refs.enemyItem.forEach(item => {
-      markup.forEach(el =>{
-        item.innerHTML = markup[GetRandImage(markup)]
-      })
-  });
 }
 
 
