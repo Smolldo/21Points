@@ -28,8 +28,9 @@ export const refs = {
     mainMenu: document.querySelector('.main_menu_btn'),
     pointBtn: document.querySelector('.point_btn'),
     cardList: document.querySelector('.card_value_list'),
-    t1: document.querySelectorAll('.t1'),
-    stop: document.querySelector('.stop'),
+    aud: document.querySelector('.audio'),
+    stop: document.querySelector('.stop_music'),
     play: document.querySelector('.play'),
     next: document.querySelector('.next'),
+    time: document.querySelector('.progres')
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/ico.png">
     <link rel="stylesheet" href="./sass/main.scss">
     <title>Ochk0</title>
 </head>
@@ -117,22 +118,33 @@
     <audio src="./audio/su.mp3" class="su"></audio>
 
     <!--audio for radio-->
-    <audio src="./audio/hardcore.mp3" class="t1"></audio>
-    <audio src="./audio/no-game.mp3" class="t1"></audio>
-    <audio src="./audio/punk.mp3" class="t1"></audio>
-    <audio src="./audio/riot.mp3" class="t1"></audio>
+    <audio src="./audio/track2.mp3" class="audio"></audio>
+    <div class="audio_cover">
     <div class="audio_player">
         <ul class="audio_control_list">
             <li class="audio_control_item">
-                <button class="stop">Stop</button>
+                <button class="stop_music audio_btn">
+                    <svg class="cntrl_icon">
+                        <use href = "./images/symbol-defs.svg#icon-pause2"></use>
+                    </svg>
+                </button>
             </li>
             <li class="audio_control_item">
-                <button class="play">Play</button>
+                <button class="play audio_btn">
+                    <svg class="cntrl_icon">
+                        <use href = "./images/symbol-defs.svg#icon-play3"></use>
+                    </svg>
+                </button>
             </li>
             <li class="audio_control_item">
-                <button class="next">Next</button>
+                <button class="next audio_btn">
+                    <svg class="cntrl_icon">
+                        <use href = "./images/symbol-defs.svg#icon-forward3"></use>
+                    </svg>
+                </button>
             </li>
         </ul>
+    </div>
     </div>
 
 
