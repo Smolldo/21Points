@@ -19,3 +19,17 @@ butt.forEach(element => {
 refs.pointBtn.addEventListener('click', (Show) => {
    refs.cardList.classList.toggle('is-none');
 })
+
+//radio 
+
+const PlayMusic = () => {
+   refs.t1[2].play();
+   refs.t1[2].volume = 0.2;
+}
+
+refs.play.addEventListener('click', PlayMusic);
+
+refs.stop.addEventListener('click', (StopMusic) =>{
+   refs.t1[2].pause();
+})
+
